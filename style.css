@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Kanit&family=Libre+Baskerville:wght@700&family=Montserrat:wght@600&family=Noto+Serif:wght@500&family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #c94b4b;
+    background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);
+    background: linear-gradient(to right, #4b134f, #c94b4b);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    background-color: white;
+    width: 400px;
+    padding: 25px 35px;
+    border-radius: 10px;
+
+}
+
+.container p {
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 58px;
+}
+
+.container input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    outline: 0;
+    margin: 10px 0 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container button {
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(57, 57, 189);
+    color: white;
+    position: relative;
+    transition: background-color 0.4s ease-out;
+    border-radius: 7px;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container button:hover {
+    cursor: pointer;
+    background-color: #0126ff;
+    background-image: linear-gradient(110deg, #0126ff 0%, #70e0d1 100%);
+}
+
+#imgbox {
+    width: 200px;
+    padding: 10px;
+    border-radius: 2px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1.5s ease-in-out;
+}
+
+#qrimage {
+    width: 100%;
+}
+
+#imgbox.showimg {
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid lightgray;
+}
+
+.error {
+    animation: shake 0.15s linear 5;
+}
+
+@keyframes shake {
+    
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(3px);
+        border-color: #f17d7d;
+    }
+    50% {
+        transform: translateX(0);
+        border-color: red;
+    }
+    75% {
+        transform: translateX(-3px);
+        border-color: #f17d7d;
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
